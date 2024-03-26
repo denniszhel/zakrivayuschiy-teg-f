@@ -182,7 +182,6 @@
   display: flex;
   width: 100%;
   height: 100%;
-  filter: none;
 }
 
 .card__picture-grayscale {
@@ -194,7 +193,7 @@
 }
 
 .card__picture-brown {
-  filter: hue-rotate(45deg);
+  filter: brightness(0.7);
 }
 
 .card__picture-negative {
@@ -327,13 +326,16 @@
 }
 
 .save-dialog {
-  display: grid;
-  gap: 20px;
   width: clamp(341px, 20.4471rem + 3.6923vw, 353px);
   min-width: 351px;
   max-width: 353px;
   min-height: 191px;
   padding: 30px clamp(28px, 3.8942rem + -4.6154vw, 45px);
+}
+
+.save-dialog__form {
+  display: grid;
+  gap: 20px;
 }
 
 .save-dialog::backdrop {
