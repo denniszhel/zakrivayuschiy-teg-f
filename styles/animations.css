@@ -63,33 +63,27 @@
 
 .like-icon.is-liked .heart {
   transform-origin: center;
-  animation: heart-scaling 0.3s ease-in 0.1s;
+  animation: heart-scaling 0.3s ease-in 0.1s alternate;
 }
 
 @keyframes heart-scaling {
   0% {
     transform: scale(1);
   }
-  50% {
-    transform: scale(1.5);
-  }
   100% {
-    transform: scale(1);
+    transform: scale(1.5);
   }
 }
 
 .like-icon.is-liked .sparks {
-  animation: sparks-splashing 0.3s ease-in 0.3s;
+  animation: sparks-splashing 0.3s ease-in 0.3s alternate;
 }
 
 @keyframes sparks-splashing {
   0% {
     opacity: 0;
   }
-  50% {
-    opacity: 1;
-  }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
