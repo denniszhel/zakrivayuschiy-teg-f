@@ -15,14 +15,12 @@
 */
 
 .page {
-  /* Резервный цвет фона, на случай если фоновый патерн будет недоступен */
   background-color: var(--card-bg-color); 
   background-image: 
   repeating-linear-gradient(90deg, var(--gradient-net-start-color), var(--gradient-net-start-color) 2px, transparent 2px, transparent 4px),
   repeating-linear-gradient(var(--gradient-net-start-color), var(--gradient-net-start-color) 2px, transparent 2px, transparent 4px),
   linear-gradient(var(--gradient-back-start-color) var(--gradient-back-start-position), var(--gradient-back-end-color));
   background-size: cover; 
-  /* Фиксация фона, чтобы он не прокручивался вместе со всей страницей */
   background-attachment: fixed; 
   min-inline-size: 320px;
   min-block-size: 100dvb;
