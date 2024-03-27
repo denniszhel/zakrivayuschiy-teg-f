@@ -320,11 +320,14 @@
   position: relative;
   width: 29px;
   height: 29px;
+  fill: var(--button-text-color);
+  mix-blend-mode: difference;
 }
 
-/* .floppy {
+.floppy {
+  fill: var(--button-text-color);
   mix-blend-mode: difference;
-} */
+}
 
 .save-dialog {
   width: clamp(341px, 20.4471rem + 3.6923vw, 353px);
@@ -356,6 +359,7 @@
   align-self: center;
   width: 39px;
   height: 39px;
+  fill: var(--button-text-color);
 }
 
 .save-dialog__text {
