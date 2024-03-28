@@ -22,6 +22,7 @@
   min-inline-size: 320px;
   min-block-size: 100dvb;
   font-variation-settings: 'wght' var(--card-text-font-weight);
+  padding-bottom: 50px;
 }
 
 .header,
@@ -356,7 +357,6 @@
   align-self: center;
   width: 39px;
   height: 39px;
-  fill: var(--button-text-color);
 }
 
 .save-dialog__text {
@@ -375,11 +375,6 @@
   width: clamp(262px, 13.4663rem + 11.0769vw, 290px);
   min-height: 38px;
   text-transform: uppercase;
-}
-
-.save-dialog__ok-button:focus,
-.save-dialog__ok-button:focus-visible {
-  box-shadow: none;
 }
 
 @media (width <= 375px) {
